@@ -13,14 +13,13 @@ let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const getSquaresOfEvenNumbers = (arr) => {
   let squaredEvenNumbers = [];
 
-  for (let num of arr) {
-    if (num % 2 === 0) {
+  for(let num of arr){
+    if(num % 2 === 0){
       squaredEvenNumbers.push(num * num);
     }
   }
-
   return squaredEvenNumbers;
-};
+}
 
 console.log(getSquaresOfEvenNumbers(arr));
 
