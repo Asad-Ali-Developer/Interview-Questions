@@ -1,7 +1,8 @@
 /*
 
     PAGE OPTIMIZATION
-
+    -----------------
+    
 
     1. Optimize Images (Prefer WebP format)
     2. Lazy Loading for heavy resources and files

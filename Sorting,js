@@ -1,0 +1,9 @@
+const text = "javascript";
+const sortedText = text.split("").reverse().join("");
+console.log("Sorted Text: ", sortedText);
+
+const arr = [4, 5, 2, 8, 1];
+const sortedArray = arr.sort((a, b) => b - a);
+console.log("Sorted Array With Reversed: ", sortedArray);
+
+
