@@ -17,8 +17,8 @@ let arr = [1, 2, 3, 4, 5, 5, 6, 7, 7, 7, 8, 9];
 const getLargestNumber = (arr) => {
   let largestNum = 0;
 
-  for(let num of arr) {
-    if(num > largestNum) {
+  for(let num of arr){
+    if(num > largestNum){
       largestNum = num
     }
   }
@@ -26,4 +26,4 @@ const getLargestNumber = (arr) => {
   return largestNum;
 }
 
-console.log(getLargestNumber(arr));
+console.log("Largest Num: ", getLargestNumber(arr))

@@ -8,23 +8,22 @@
 //     return innerFn;
 // }
 
-function outerFn() {
-  var a = 100;
-  function innerFn() {
-    a++;
-    console.log("Hoisting: ", a);
+function outerFn(){
+  let a = 1;
+
+  function innerFn(){
+    a++
+    console.log("Value: ", a)
   }
-  return innerFn;
+
+  return innerFn
 }
 
-var fn = outerFn();
-var fn1 = outerFn();
-fn1();
-fn();
-fn();
-fn();
-fn();
-fn();
-fn1();
-fn1();
-fn1();
+
+const closure = outerFn();
+
+closure();
+closure();
+closure();
+closure();
+closure();
