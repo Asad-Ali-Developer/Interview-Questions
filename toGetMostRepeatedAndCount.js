@@ -26,7 +26,7 @@ const toGetMostRepeatedNo = (arr) => {
   let maxCount = arr[0];
   let maxNum = 0;
 
-  for(let num of arr) {
+  for(let num of arr) { 
     count[num] = (count[num] || 0) + 1;
 
     if(count[num] > maxCount) {
@@ -39,3 +39,25 @@ const toGetMostRepeatedNo = (arr) => {
 }
 
 console.log(toGetMostRepeatedNo(arr));
+
+
+// To Get most repeated number and its count
+const toGetBigAndRepeatedNumber = (arr) => {
+  let count = {};
+  let maxCount = arr[0]
+  let maxNum;
+  
+  for (let num of arr) {
+    count[num] = (count[num] || 0) + 1;
+    
+    if(num > maxCount) {
+      maxCount = count[num]
+      maxNum = num
+    }
+  }
+  
+  
+  console.log("Max Number: ", maxNum, "Max Count: ", maxCount)
+}
+
+toGetBigAndRepeatedNumber(arr)
